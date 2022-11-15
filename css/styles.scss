@@ -425,6 +425,36 @@ h1 span {
     }
 }
 
+//Playlist page
+.height_regular_page{
+    height: 71vh;
+    border: solid wheat;
+}
+
+#playlist_banner_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid white;
+    top: 7.7%;
+}
+
+#playlist_banner_up{
+    height: 64px;
+    position: sticky;
+    border: solid wheat;
+}
+
+#playlist_main_gallery{
+    border: solid yellow;
+
+   
+    p{
+        color: white
+    }
+}
+
+
 
 
 @media (max-width: 970px) {

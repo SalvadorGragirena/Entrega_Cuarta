@@ -461,6 +461,32 @@ h1 span {
   margin-bottom: 30px;
 }
 
+.height_regular_page {
+  height: 71vh;
+  border: solid wheat;
+}
+
+#playlist_banner_left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid white;
+  top: 7.7%;
+}
+
+#playlist_banner_up {
+  height: 64px;
+  position: sticky;
+  border: solid wheat;
+}
+
+#playlist_main_gallery {
+  border: solid yellow;
+}
+#playlist_main_gallery p {
+  color: white;
+}
+
 @media (max-width: 970px) {
   #grid_container {
     grid-template-areas: " index_header " " index_aside " " index_main " " index_footer";
