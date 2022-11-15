@@ -466,30 +466,14 @@ h1 span {
   margin-bottom: 30px;
 }
 
-.height_regular_page {
-  height: 71vh;
-  border: solid rgb(248, 221, 221);
+#playlist_text h2 {
+  color: rgb(248, 221, 221);
+}
+#playlist_text h3 {
+  color: #efef13;
 }
 
-#playlist_banner_left {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border: solid rgb(248, 221, 221);
-  top: 7.7%;
-}
-
-#playlist_banner_up {
-  height: 64px;
-  position: sticky;
-  border: solid rgb(248, 221, 221);
-}
-
-#playlist_main_gallery {
-  border: solid #efef13;
-}
-#playlist_main_gallery p {
+.playlist_table_color p {
   color: rgb(248, 221, 221);
 }
 

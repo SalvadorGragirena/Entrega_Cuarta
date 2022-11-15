@@ -405,34 +405,21 @@ h1 span {
 }
 
 //Playlist page
-.height_regular_page{
-    height: 71vh;
-    border: solid $blanco;
-}
 
-#playlist_banner_left{
-    @include flex_box(row, center, center);
-
-    border: solid $blanco;
-    top: 7.7%;
-}
-
-#playlist_banner_up{
-    height: 64px;
-    position: sticky;
-    border: solid $blanco;
-}
-
-#playlist_main_gallery{
-    border: solid $amarillo;
-
-   
-    p{
+#playlist_text{
+    h2{
         color: $blanco;
+    }
+    h3{
+        color: $amarillo;
     }
 }
 
-
+.playlist_table_color{
+    p{  
+        color: $blanco;
+    }
+}
 
 
 @media (max-width: 970px) {
