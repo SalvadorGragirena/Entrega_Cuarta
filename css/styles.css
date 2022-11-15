@@ -99,6 +99,11 @@
   text-align: center;
 }
 
+.fondo_transparente, #index_main_cover li p, #index_main_cover section, #index_main_playlist section, #index_main_playlist div, #index_main_event div {
+  background-image: linear-gradient(rgba(126, 7, 7, 0.192), rgb(160, 141, 141));
+  background-attachment: local;
+}
+
 h1 span {
   color: #c10000;
 }
@@ -124,11 +129,15 @@ h1 span {
 
 #index_up_header {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: none;
 }
 #index_up_header nav ul {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: none;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -138,7 +147,7 @@ h1 span {
 }
 #index_up_header nav ul li a {
   text-decoration: none;
-  color: rgb(237, 213, 213);
+  color: rgb(248, 221, 221);
   font-size: 20px;
 }
 #index_up_header nav ul li a:hover {
@@ -148,6 +157,7 @@ h1 span {
 
 #index_header_box {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin-left: 10%;
@@ -166,10 +176,10 @@ h1 span {
 #index_header_box #index_header_box_p1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 18px;
-  color: rgb(106, 113, 116);
+  color: rgb(83, 84, 84);
 }
 #index_header_box #index_header_box_p1 strong {
-  color: rgb(194, 194, 192);
+  color: rgb(248, 221, 221);
 }
 #index_header_box #index_header_box_p2 {
   font-family: Arial, Helvetica, sans-serif;
@@ -189,15 +199,15 @@ h1 span {
   grid-area: index_aside;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
 }
 #index_aside section {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
 }
 #index_aside img {
   height: 6rem;
@@ -209,12 +219,12 @@ h1 span {
   background-color: rgb(39, 53, 53);
 }
 #index_footer h2 {
-  color: rgb(215, 200, 182);
+  color: rgb(248, 221, 221);
   text-align: center;
   margin: 20px;
 }
 #index_footer p {
-  color: rgb(215, 200, 182);
+  color: rgb(248, 221, 221);
   text-align: center;
 }
 
@@ -227,21 +237,20 @@ h1 span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: none;
 }
 #index_main_event a {
   text-align: right;
   margin-bottom: 5px;
   margin-right: 5px;
   text-decoration: none;
-  color: aliceblue;
+  color: rgb(248, 221, 221);
 }
 #index_main_event a:hover {
   color: rgb(83, 84, 84);
   transition: 0.2s;
 }
 #index_main_event div {
-  background-image: linear-gradient(rgba(126, 7, 7, 0.192), rgb(86, 79, 79));
-  background-attachment: fixed;
   width: 100%;
 }
 #index_main_event div h2 {
@@ -260,7 +269,7 @@ h1 span {
   font-size: large;
   font-style: italic;
   font-size: 20px;
-  color: rgb(211, 211, 211);
+  color: rgb(248, 221, 221);
   display: flex;
   justify-content: center;
   margin-top: 5%;
@@ -281,12 +290,12 @@ h1 span {
   background-size: cover;
   background-position: center;
   display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: none;
 }
 #index_main_playlist div {
-  background-image: linear-gradient(rgba(126, 7, 7, 0.192), rgb(86, 79, 79));
-  background-attachment: fixed;
   width: 100%;
 }
 #index_main_playlist div h2 {
@@ -300,8 +309,6 @@ h1 span {
 #index_main_playlist section {
   margin-left: 10%;
   margin-right: 15%;
-  background-image: linear-gradient(rgba(126, 7, 7, 0.192), rgb(160, 141, 141));
-  background-attachment: local;
   padding-left: 25%;
   border-radius: 10px;
 }
@@ -311,12 +318,13 @@ h1 span {
 }
 #index_main_playlist a {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
-  text-align: end;
+  align-items: none;
   margin-bottom: 5px;
   margin-right: 5px;
   text-decoration: none;
-  color: aliceblue;
+  color: rgb(248, 221, 221);
 }
 #index_main_playlist a:hover {
   color: rgb(83, 84, 84);
@@ -330,12 +338,8 @@ h1 span {
   background-size: cover;
   background-position: center;
 }
-#index_main_cover section {
-  background-image: linear-gradient(rgba(126, 7, 7, 0.192), rgb(86, 79, 79));
-  background-attachment: local;
-}
 #index_main_cover section p {
-  color: rgb(131, 148, 93);
+  color: rgb(248, 221, 221);
 }
 #index_main_cover h2 {
   animation-duration: 5s;
@@ -343,7 +347,7 @@ h1 span {
   animation-iteration-count: initial;
 }
 #index_main_cover h3 {
-  color: rgb(247, 221, 221);
+  color: rgb(248, 221, 221);
   font-weight: lighter;
   margin-left: 10px;
 }
@@ -354,6 +358,7 @@ h1 span {
 }
 #index_main_cover li {
   display: flex;
+  flex-direction: row;
   justify-content: left;
   align-items: center;
   margin-left: 10px;
@@ -363,8 +368,6 @@ h1 span {
   color: rgb(248, 221, 221);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-left: 5px;
-  background-image: linear-gradient(rgba(126, 7, 7, 0.192), rgb(86, 79, 79));
-  background-attachment: local;
 }
 #index_main_cover a {
   display: flex;
@@ -373,7 +376,7 @@ h1 span {
   margin-bottom: 5px;
   margin-right: 5px;
   text-decoration: none;
-  color: aliceblue;
+  color: rgb(248, 221, 221);
 }
 #index_main_cover a:hover {
   color: rgb(83, 84, 84);
@@ -401,7 +404,7 @@ h1 span {
   margin-bottom: 30%;
 }
 #ticket_main div h2 {
-  color: azure;
+  color: rgb(248, 221, 221);
   text-align: center;
 }
 #ticket_main div h2 span {
@@ -413,7 +416,7 @@ h1 span {
   border: solid 1px #d8f32c;
 }
 #ticket_main div p {
-  color: azure;
+  color: rgb(248, 221, 221);
 }
 #ticket_main img {
   position: relative;
@@ -424,7 +427,9 @@ h1 span {
 
 .ticket_flex_row {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: none;
   flex-wrap: wrap;
 }
 
@@ -438,12 +443,12 @@ h1 span {
 
 #opening_act {
   text-align: center;
-  border-bottom: solid 1px rgb(233, 230, 230);
+  border-bottom: solid 1px rgb(248, 221, 221);
   margin-bottom: 5px;
   background-color: #0a0107;
 }
 #opening_act h2 {
-  color: rgb(233, 230, 230);
+  color: rgb(248, 221, 221);
   margin-bottom: 2px;
 }
 
@@ -452,7 +457,7 @@ h1 span {
   margin-bottom: 30px;
   font-size: xx-large;
   text-align: center;
-  color: rgb(233, 230, 230);
+  color: rgb(248, 221, 221);
 }
 #show_seats h3 span {
   color: #efef13;
@@ -463,28 +468,29 @@ h1 span {
 
 .height_regular_page {
   height: 71vh;
-  border: solid wheat;
+  border: solid rgb(248, 221, 221);
 }
 
 #playlist_banner_left {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  border: solid white;
+  align-items: center;
+  border: solid rgb(248, 221, 221);
   top: 7.7%;
 }
 
 #playlist_banner_up {
   height: 64px;
   position: sticky;
-  border: solid wheat;
+  border: solid rgb(248, 221, 221);
 }
 
 #playlist_main_gallery {
-  border: solid yellow;
+  border: solid #efef13;
 }
 #playlist_main_gallery p {
-  color: white;
+  color: rgb(248, 221, 221);
 }
 
 @media (max-width: 970px) {
@@ -499,9 +505,10 @@ h1 span {
     height: 10vh;
   }
   #index_aside {
+    display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
   }
 }
 @media (max-width: 680px) {
@@ -517,9 +524,10 @@ h1 span {
 }
 @media (max-width: 400px) {
   #index_aside {
+    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
   }
   #index_aside section {
     margin-left: 10px;
