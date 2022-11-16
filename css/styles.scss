@@ -421,6 +421,44 @@ h1 span {
     }
 }
 
+//Profiel page
+
+#profiel_aside{
+    height: calc(70% - 215px);
+
+    @include flex_box(column, flex-start, space-around);
+    section{
+        @include flex_box(row, space-between, space-around);
+        flex-wrap: wrap;
+        p{
+            color: $blanco;
+            span{
+                color: $amarillo;
+            }
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
+
+#profiel_main_video{
+    @include flex_box(column, center, center);
+}
+
+#profiel_main{
+    height: 100%;
+    h2,h3{
+        color: $blanco;
+    }
+    p{
+        color: rgb(111, 194, 22);
+    }
+    button{
+        margin-bottom: 10px;
+    }
+}
+
 
 @media (max-width: 970px) {
     #grid_container {
@@ -460,6 +498,19 @@ h1 span {
     #index_up_header {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    #profiel_aside{
+        div{
+            display: flex;
+            justify-content: center;
+            img{
+                height: 300px;
+                width: 200px;
+            }
+        }
     }
 }
 

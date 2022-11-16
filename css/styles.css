@@ -477,6 +477,50 @@ h1 span {
   color: rgb(248, 221, 221);
 }
 
+#profiel_aside {
+  height: calc(70% - 215px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-around;
+}
+#profiel_aside section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-around;
+  flex-wrap: wrap;
+}
+#profiel_aside section p {
+  color: rgb(248, 221, 221);
+}
+#profiel_aside section p span {
+  color: #efef13;
+}
+#profiel_aside img {
+  width: 100%;
+}
+
+#profiel_main_video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#profiel_main {
+  height: 100%;
+}
+#profiel_main h2, #profiel_main h3 {
+  color: rgb(248, 221, 221);
+}
+#profiel_main p {
+  color: rgb(111, 194, 22);
+}
+#profiel_main button {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 970px) {
   #grid_container {
     grid-template-areas: " index_header " " index_aside " " index_main " " index_footer";
@@ -504,6 +548,16 @@ h1 span {
   #index_up_header {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  #profiel_aside div {
+    display: flex;
+    justify-content: center;
+  }
+  #profiel_aside div img {
+    height: 300px;
+    width: 200px;
   }
 }
 @media (max-width: 400px) {
